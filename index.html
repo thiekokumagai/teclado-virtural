@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclado Virtual</title>
+    <style>
+        .keyboard {
+            display: flex;
+            flex-wrap: wrap;
+            width: 250px;
+        }
+        .key {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            text-align: center;
+            line-height: 60px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .key:hover {
+            background-color: #f0f0f0;
+        }
+        .input-box {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-box">
+        <input type="text" id="numberInput" readonly>
+    </div>
+    <div class="keyboard" id="keyboard">
+        <!-- Teclas numéricas serão inseridas aqui pelo JavaScript -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
